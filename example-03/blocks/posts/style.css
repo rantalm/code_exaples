@@ -1,0 +1,10 @@
+@import './../../assets/css/modules/_config';
+
+.four-articles-container {
+
+    .article-preview__read-more {
+        @include small {
+            display: none;
+        }
+    }
+}

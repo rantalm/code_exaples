@@ -1,0 +1,18 @@
+
+.regards__item {
+    display: block;
+    border: none;
+
+    & + button {
+        
+    }
+    
+}
+.regards__item--editor-wrapper {
+    position: relative;
+    .editor-rich-text + button {
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
+}

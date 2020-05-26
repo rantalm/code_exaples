@@ -1,0 +1,49 @@
+@import './../../assets/css/modules/_config';
+
+.ba-title {
+  position: relative;
+  
+  @include small {
+    margin-bottom: 2rem;
+  }
+
+  img {
+    position: absolute;
+    right: 1rem;
+    width: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &--full {
+      background-color: $secondary;
+      color: #fff;
+      padding: 1.2rem 1rem;
+
+      @include small {
+          border-radius: 5rem;
+          padding: 1.2rem 3rem;
+      }
+      a {
+          color: #fff;
+      }
+  }
+
+  &--fullp {
+    background-color: $main2 !important;
+  }
+
+  &--with-icon {
+    padding-right: 5rem;
+
+
+  }
+  
+}
+
+.ba-content {
+  .ba-title--full:not(.ba-title--with-icon) {
+    @include small {
+      padding-right: 3rem;
+    }
+  }
+}

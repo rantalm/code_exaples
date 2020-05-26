@@ -1,0 +1,118 @@
+@import './../../../assets/css/modules/_config';
+
+.article-preview {
+    position: relative;
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+
+    &__img-container {
+        display: block;
+        position: relative;
+    }
+
+    &__tag {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        background: $secondary;
+        padding: .7rem 4rem;
+    }
+
+    &__title {
+        padding: .7rem 0 0 0;
+        font-size: $font-normal;
+
+        @include medium {
+          font-size: $font-title;
+          font-weight: 400;
+        }
+    }
+
+    &__date {
+        font-size: 1.4rem;
+        padding: .6rem 0 .7rem 0;
+        color: #666;
+        font-weight: 100;
+    }
+
+    &__time {
+        direction: ltr;
+        text-align: right;
+        font-size: $font-small;
+    }
+
+    &__excerpt {
+        padding: 0 0 .5rem 0;
+    }
+
+    &__read-more {
+        color: $main2;
+    }
+
+    &--single-post {
+        .article-preview__title {
+            @include large {
+                font-size: 3.6rem;
+                padding: 1rem 0 0 0;
+            }
+
+        }
+        .article-preview__date {
+          @include medium {
+            font-size: 1.4rem;
+            padding: .4rem 0 .7rem 0;
+          }  
+        }
+        .article-preview__excerpt {
+            @include large {
+                padding: 0 0 1rem 0;
+            }
+        }
+    }
+}
+
+/* small */
+.article-preview--small {
+    padding-bottom: 2.4rem;
+
+    .article-preview__tag {
+        padding: .5rem 2rem;
+    }
+}
+
+/* smallest */
+.article-preview--smallest {
+
+    .article-preview__tag {
+        width: 100%;
+        top: initial;
+        padding: 1vw;
+
+        @include large {
+            padding: 1rem;
+            text-align: center;
+        }
+    }
+
+    .article-preview__excerpt {
+
+        @include large {
+            padding: 1rem 0;
+        }
+    }
+}
+
+/* four articles */
+.four-articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    * {
+        flex-basis: 48.5%;
+    }
+}

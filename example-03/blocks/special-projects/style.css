@@ -1,0 +1,58 @@
+@import './../../assets/css/modules/_config';
+
+.special-projects__wrapper {
+        background: #fff;
+
+        @include large {
+            padding: 2.4rem 0;
+            width: calc(100vw - 1.7rem) !important;
+            right: calc(-1 * ((100vw - 115.7rem) / 2));
+        }
+
+}
+
+section.special-projects {
+    @include large {
+        width: 114rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+}
+.projects-slider {
+
+    .swiper-slide {
+        flex-basis: 44%;
+
+        @include large {
+            flex-basis: inherit;
+        }
+    }   
+}
+
+.special-projects .swiper-button-next, .special-projects .swiper-container-rtl .swiper-button-prev {
+    display: none;
+    @include large {
+        display: inherit;
+        right: 0;
+        background-color: $bg-gray-m;
+        padding: 3rem;
+        border-radius: 50%;
+    }
+    @include larger {
+        right: -80px;
+    }
+}
+.special-projects .swiper-button-prev, .special-projects .swiper-container-rtl .swiper-button-next {
+    display: none;
+    @include large {
+        display: inherit;
+        left: 0;
+        background-color: $bg-gray-m;
+        padding: 3rem;
+        border-radius: 50%;
+    }
+    @include larger {
+        left: -80px;
+    }
+}

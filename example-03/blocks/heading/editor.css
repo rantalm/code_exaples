@@ -1,0 +1,8 @@
+@import './../../assets/css/modules/_config';
+
+.components-base-control.ba-edit-select {
+    transform: translateX(1px);
+}
+.ba-edit-btn-pad {
+    padding: 0 8px;
+}

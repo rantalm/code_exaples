@@ -1,0 +1,12 @@
+.leave-details{
+    max-width: 40rem;
+    margin: 0 auto;
+
+    &__input{
+        width: 100%;
+        font-size: 1.6rem;
+        border: none;
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+}

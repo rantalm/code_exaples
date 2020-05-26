@@ -1,0 +1,11 @@
+@import './../../assets/css/modules/editor';
+@import './../../assets/css/modules/_config';
+
+.accordion {
+
+    &__content {
+        display: block;
+
+    }
+    
+}

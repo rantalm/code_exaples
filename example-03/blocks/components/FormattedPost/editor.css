@@ -1,0 +1,10 @@
+.components-panel__row .image-wrapper img {
+        width: 20%;
+        height: auto;
+}
+.components-panel__row {
+    .components-button {
+        margin-bottom: 1rem;
+    }
+}
+

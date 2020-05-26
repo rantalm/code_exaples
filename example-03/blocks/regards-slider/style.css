@@ -1,0 +1,56 @@
+@import './../../assets/css/modules/_config';
+
+.regards {
+    overflow: hidden;
+    background: $main2;
+    color: #fff;
+    padding-bottom: 3rem;
+    position: relative;
+    
+    @include large {
+        display: flex;
+        margin-bottom: 0;
+        align-content: center;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    &__items {
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+           @include large {
+            transform: translateX(calc(((100vw - 1140px) / 2) * -1));
+            height: 100%;
+            position: relative;
+        }
+        
+    }
+
+    &__item {
+        list-style: none;
+        display: inline-block;
+        padding: 0 2rem;
+        border-left: 1px solid #fff;
+    }
+
+    &__title {
+        text-align: center;
+        padding: 1rem;
+        font-size: 2.2rem;
+        z-index: 10;
+       
+
+        @include large {
+            width: calc((100vw - 1140px) / 2);
+            background: $main2;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            top: 0;
+            /* top: -12px; */
+        }
+    }
+}

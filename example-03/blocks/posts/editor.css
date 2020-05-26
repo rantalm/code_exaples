@@ -1,0 +1,16 @@
+
+@import './../../assets/css/modules/_config';
+
+.posts {
+
+    &__url-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__remove-post {
+        background: $danger;
+        width: 4rem;
+        height: 4rem;
+    }
+}

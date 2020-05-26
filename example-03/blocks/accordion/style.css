@@ -1,0 +1,43 @@
+
+@import './../../assets/css/modules/_config';
+
+.accordion {
+    position: relative;
+    min-height: 1px;
+    border-bottom: 1px solid transparent;
+
+    &__element {
+        position: relative;
+        min-height: 1px;
+    }
+
+    &__title {
+        padding: 1.2rem 1rem;
+        color: $secondary;
+        background-color: #fff;
+        font-size: $font-title;
+        font-weight: 400;
+        border-bottom: 1px solid $bg-gray-m;
+        position: relative;
+        cursor: pointer;
+
+        @include large {
+            border-radius: 2rem;
+            margin-bottom: .8rem;
+        }
+
+        &--full {
+            background: $secondary;
+            color: #fff;
+        }
+    }
+
+    &__content {
+        padding: 1rem;
+        background-color: $bg-gray-m;
+        width: 100%;
+        display: none;
+        position: relative;
+        display: none;
+    }
+}

@@ -1,0 +1,14 @@
+@import './../../assets/css/modules/_config';
+
+.txt-img-title {
+
+    &__main-title {
+        font-size: $font-title;
+        /* font-weight: 600; */
+        /* padding-bottom: 2vw; */
+    }
+
+    &__title {     
+        font-weight: normal;
+    }
+}
